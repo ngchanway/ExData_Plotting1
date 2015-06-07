@@ -36,12 +36,12 @@ plot4 <- function() {
         ## Construct the plot of Energy sub metering over time
         ## and save it to a PNG file
         ## with a width of 480 pixels and a height of 480 pixels (default)
-        png("plot4.png")
+        png("plot4.png", bg = "transparent")
         par(mfcol = c(2, 2))
         
         ## Construct the plot of Global Active Power over time
         plot(completeTime, as.numeric(data[, 3]), type = "l",
-             ylab = "Global Active Power (kilowatts)", xlab = "")
+             ylab = "Global Active Power", xlab = "")
         
         ## Construct the plot of Energy sub metering over time
         plot(completeTime, as.numeric(data[, 7]), type = "l",

@@ -37,7 +37,7 @@ plot2 <- function() {
         ## Construct the plot of Global Active Power over time
         ## and save it to a PNG file
         ## with a width of 480 pixels and a height of 480 pixels (default)
-        png("plot2.png")
+        png("plot2.png", bg = "transparent")
         plot(completeTime, as.numeric(data[, 3]), type = "l",
              ylab = "Global Active Power (kilowatts)", xlab = "")
         dev.off()

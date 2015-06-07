@@ -37,7 +37,7 @@ plot3 <- function() {
         ## Construct the plot of Energy sub metering over time
         ## and save it to a PNG file
         ## with a width of 480 pixels and a height of 480 pixels (default)
-        png("plot3.png")
+        png("plot3.png", bg = "transparent")
         plot(completeTime, as.numeric(data[, 7]), type = "l",
              ylab = "Energy sub metering", xlab = "")
         lines(completeTime, as.numeric(data[, 8]), col = "red")
