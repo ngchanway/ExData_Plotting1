@@ -30,6 +30,7 @@ plot4 <- function() {
         end <- grep("3/2/2007", readLines(filename))[1]
         data <- read.table(filename, sep = ";", na.strings = "?",
                            skip = start - 1, nrows = end - start)
+        data <- data[complete.cases(data), ]
         date_time <- paste(data[, 1], data[, 2])
         completeTime <- strptime(date_time, format = "%d/%m/%Y %H:%M:%S")
         

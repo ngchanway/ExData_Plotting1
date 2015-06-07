@@ -30,12 +30,14 @@ plot1 <- function() {
         end <- grep("3/2/2007", readLines(filename))[1]
         data <- read.table(filename, sep = ";", na.strings = "?",
                            skip = start - 1, nrows = end - start)
+        data <- data[complete.cases(data), ]
         
         ## Construct the histogram of Global Active Power
         ## and save it to a PNG file
         ## with a width of 480 pixels and a height of 480 pixels (default)
         png("plot1.png", bg = "transparent")
-        hist(data[, 3], col = "red", main = "Global Active Power",
+        hist(data[, 3], col = "red",
+             main = "Global Active Power",
              xlab = "Global Active Power (kilowatts)")
         dev.off()
 }
