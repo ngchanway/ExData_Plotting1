@@ -4,7 +4,7 @@
 ## This function will be using the "Individual household electric power
 ## consumption Data Set" from the UC Irvine Machine Learning Repository.
 
-## This function construct the plot of energy sub-metering No. 1, No. 2, and
+## This function constructs the plot of energy sub-metering No. 1, No. 2, and
 ## No. 3 over time using the base plotting system.
 
 plot3 <- function() {

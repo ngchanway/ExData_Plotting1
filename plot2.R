@@ -4,7 +4,7 @@
 ## This function will be using the "Individual household electric power
 ## consumption Data Set" from the UC Irvine Machine Learning Repository.
 
-## This function construct the plot of household global minute-averaged active
+## This function constructs the plot of household global minute-averaged active
 ## power over time using the base plotting system.
 
 plot2 <- function() {

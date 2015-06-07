@@ -4,7 +4,7 @@
 ## This function will be using the "Individual household electric power
 ## consumption Data Set" from the UC Irvine Machine Learning Repository.
 
-## This function construct 4 plots using the base plotting system.
+## This function constructs 4 plots using the base plotting system.
 
 plot4 <- function() {
         fileurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"

@@ -36,8 +36,7 @@ plot1 <- function() {
         ## and save it to a PNG file
         ## with a width of 480 pixels and a height of 480 pixels (default)
         png("plot1.png", bg = "transparent")
-        hist(data[, 3], col = "red",
-             main = "Global Active Power",
+        hist(data[, 3], col = "red", main = "Global Active Power",
              xlab = "Global Active Power (kilowatts)")
         dev.off()
 }
